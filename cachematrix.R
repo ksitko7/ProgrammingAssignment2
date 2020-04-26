@@ -3,7 +3,7 @@
 ## the value of the inverse matrix or gets it
 
 makeCacheMatrix <- function(x = matrix()) {
-    inv <- NULL ## 
+    inv <- NULL 
     set <- function(y) {
         x <<- y
         inv <<- NULL
@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## This function calculates the inverse of the special matrix
 ## that was created above, but first it checks to see if it 
 ## has already been calculated. If it finds that it has it uses
-## the cached value and skips computation. If it doesn't fin it
+## the cached value and skips computation. If it doesn't find it
 ## it caluclates it.
 
 cacheSolve <- function(x, ...) {
